@@ -1,0 +1,12 @@
+<% content_for :title, 'Index of all of the projects' %>
+<% content_for :meta_description, 'A list of all of the pt projects' %>
+<div class="page-header">
+  <h1>List of all of the pt projects</h1>
+</div>
+
+<div class="list-group">
+  <% @projects.each_with_index do |project, index| %>
+    <%= link_to project[:name], controller: 'projects', action: 'show', id: index %>
+  <% end %>
+</div>
+

@@ -1,0 +1,17 @@
+<% content_for :title, @project[:name]  %>
+<% content_for :meta_description, "Info on project #{@project[:name]}" %>
+<div class="page-header">
+  <h1>Everything there is to know about <%= @project[:name] %></h1>
+</div>
+
+<table class="table table-bordered"> 
+<tbody> 
+<tr> <th scope=row>Name</th> <td><%= @project[:name] %></td></tr>
+<tr> <th scope=row>Country</th> <td><%= @project[:country] %></td></tr>
+<tr> <th scope=row>Area</th> <td><%= @project[:area] %></td></tr>
+</tbody>
+
+
+
+
+
